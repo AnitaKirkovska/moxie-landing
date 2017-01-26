@@ -103,7 +103,7 @@ aside {
     background-color: transparent;
 }
 .navbar-default .nav>li.active>a:focus:hover, .navbar-default .nav>li.active>a:hover {
-    background-color: #3C5496;
+    background-color: transparent;
 }
 @media (min-width:768px) {
     .navbar-default {
@@ -120,7 +120,7 @@ aside {
     color: #3C5496;
 }
 .navbar-default .nav>li>a:focus:hover, .navbar-default .nav>li>a:hover {
-    color: #fff;
+    color: #eb3812;
 }
 .navbar-default.affix {
     background-color: #fff;
