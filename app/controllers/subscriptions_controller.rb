@@ -10,7 +10,7 @@ class SubscriptionsController < ApplicationController
 
     respond_to do |format|
       if @subscription.save
-        format.html { redirect_to new_subscription_path, notice: 'Извршивте успешно зачленување. Ќе бидете известени штом имаме било какви новости.' }
+        format.html { redirect_to new_subscription_path, notice: 'Извршивте успешно зачленување.' }
       else
         format.html { render :new }
       end

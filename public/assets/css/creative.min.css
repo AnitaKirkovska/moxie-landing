@@ -95,6 +95,11 @@ aside {
     font-size: 13px;
     color: #222;
 }
+@media (max-height: 740px) and (min-width: 768px) {
+    header {
+        min-height: 740px !important;
+    }
+}
 .navbar-default .nav>li>a:focus:hover, .navbar-default .nav>li>a:hover {
     color: #3C5496;
 }
