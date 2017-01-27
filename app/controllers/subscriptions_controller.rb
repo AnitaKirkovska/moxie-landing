@@ -1,6 +1,10 @@
 class SubscriptionsController < ApplicationController
   before_action :set_subscription, only: [:show, :edit, :update, :destroy]
 
+  def index
+
+  end
+
   def new
     @subscription = Subscription.new
   end
@@ -10,7 +14,7 @@ class SubscriptionsController < ApplicationController
 
     respond_to do |format|
       if @subscription.save
-        format.html { redirect_to new_subscription_path, notice: 'Извршивте успешно зачленување.' }
+        format.html { redirect_to root_path, notice: 'Извршивте успешно зачленување.' }
       else
         format.html { render :new }
       end
