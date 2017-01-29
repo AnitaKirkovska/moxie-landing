@@ -361,8 +361,6 @@ nav ul li {
     margin-bottom: 0px;
 }
 
-
-
 nav ul li a {
     font-size: 17px;
     line-height: 22px;
@@ -534,9 +532,7 @@ input[type="email"] {
 .new_subscription{
     padding-left: 180px;
 }
-.subscribe-form2 {
-    padding-right:180px;
-}
+
 
 .function-btn:hover {
     border-color: white;
