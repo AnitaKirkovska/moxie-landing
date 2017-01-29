@@ -532,7 +532,7 @@ input[type="email"] {
 .new_subscription{
     padding-left: 180px;
 }
-
+-webkit-appearance: none;
 
 .function-btn:hover {
     border-color: white;
