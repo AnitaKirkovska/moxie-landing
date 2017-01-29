@@ -1,64 +1,118 @@
-(function($) {
-    "use strict"; // Start of use strict
-
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
+$(document).ready(function () {
+    
+    var headerHeight = ('header').height;
+    
+     $(".scroll-to-idea").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#idea").offset().top - 43
+        }, 700);
     });
-
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
+    
+    $(".scroll-to-features").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#features").offset().top -43
+        }, 700);
     });
-
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
+    $(".scroll-to-projects").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top - 100
+        }, 700);
     });
-
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
-
-    // Initialize and Configure Scroll Reveal Animation
-    window.sr = ScrollReveal();
-    sr.reveal('.sr-icons', {
-        duration: 600,
-        scale: 0.3,
-        distance: '0px'
-    }, 200);
-    sr.reveal('.sr-button', {
-        duration: 1000,
-        delay: 200
+    $(".scroll-to-contact").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top - 43
+        }, 700);
     });
-    sr.reveal('.sr-contact', {
-        duration: 600,
-        scale: 0.3,
-        distance: '0px'
-    }, 300);
-
-    // Initialize and Configure Magnific Popup Lightbox Plugin
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-        }
+    
+    $(".scroll-to-home").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top - 150
+        }, 700);
     });
+    
+    
+    window.onload = function () {
+     var input = document.getElementById("myinputbox").focus();
+ }
+    
+    
+  
+    /* VALIDATION */
 
-})(jQuery); // End of use strict
+    /* VALIDATION */
+    var inp = $('.main-input');
+    var mainForm = $('.subscribe-form');
+
+
+    function err(){
+      $.each(inp, function(){
+        if(!$.trim(this.value)){
+          $(this).addClass('validation-error');
+          // more stuff
+        }else{
+          $(this).removeClass('validation-error');
+          // more stuff
+        }  
+     });  
+    }
+
+
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+        return re.test(email);
+    }
+
+
+
+    mainForm.on('submit', function(e){
+
+            e.preventDefault();
+
+            var emailField = $('.field-email');
+
+            emailField.removeClass('validation-error');
+
+            if( !validateEmail(emailField.val()) ){
+
+                e.preventDefault();
+                emailField.addClass('validation-error');
+            }
+
+            err();
+    });
+    
+    
+    var body = $('body');
+        
+        var menuTrigger = $('.js-menu-trigger');
+        var mainOverlay = $('.js-main-overlay');
+  
+        
+        
+        mainOverlay.on('click', function(){
+            body.removeClass('menu-is-active');
+        });
+       
+  
+        menuTrigger.on('click', function(){
+          body.addClass('menu-is-active');
+        });
+        
+        
+        menuTrigger.on('click', function(){
+
+        $('.js-body').toggleClass('menu-is-visible'); // or addClass
+
+        });
+        
+        
+       $('.menu li a').on('click', function(){
+       
+        $("body").removeClass("menu-is-active");
+
+        });
+    
+    
+    
+});

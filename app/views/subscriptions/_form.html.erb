@@ -1,21 +1,23 @@
-<div class="row">
-  <div class="col-md-8 col-md-offset-2 subscription-form">
-  
-    <p id="notice"><%= notice %></p>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9cc5e1cd1e.js"></script>
+    <link href="/assets/css/creative.min.css" rel="stylesheet">
+
+<form action="" class="subscribe-form">
+<p id="notice"><%= notice %></p>
     <%= form_for(@subscription) do |f| %>
       
-      <div class="form-group">
-        <%= f.text_field :name, class: 'form-control', placeholder: "Внесете го вашето име" %>
+      <div class="main-input field-name" name="name" type="text" id="myinputbox">
+        <%= f.text_field :name, class: 'form-control', placeholder: "Вашето име..." %>
       </div>
 
-      <div class="form-group">
-        <%= f.email_field :email, class: 'form-control', placeholder: "Внесете го вашиот е-маил" %>
+      <div class="main-input field-email" name="email" type="email">
+        <%= f.email_field :email, class: 'form-control', placeholder: "Вашиот email..." %>
       </div>
 
-      <div class="actions">
-        <%= f.submit class: 'btn btn-xl btn-danger', value: "Регистрирај се" %>
+      <div class="submit-btn">
+        <%= f.submit class: 'submit-btn',  value: "ВКЛУЧИ СЕ" %>
       </div>
     <% end %>
-
-  </div>
-</div>
+                    
+</form>
