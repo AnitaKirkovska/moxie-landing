@@ -1,11 +1,13 @@
 
-<p id="notice"><%= notice %></p>
+<p id="notice" class="notice-c"><%= notice %></p>
+
 <%= form_for(@subscription) do |f| %>
 
-  <%= f.text_field :name, class: 'main-input field-name', id: 'myinputbox', placeholder: "Вашето име..." %>
+  <%= f.text_field :name, class: 'main-input field-name', id: 'myinputbox', placeholder: "Име и Презиме..." %>
 
-  <%= f.email_field :email, class: 'main-input field-name', placeholder: "Вашиот email..." %>
+  <%= f.email_field :email, class: 'main-input field-name', placeholder: "Еmail адреса..." %>
 
   <%= f.submit class: 'submit-btn',  value: "ВКЛУЧИ СЕ" %>
+ 
 <% end %>
                     

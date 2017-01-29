@@ -361,6 +361,8 @@ nav ul li {
     margin-bottom: 0px;
 }
 
+
+
 nav ul li a {
     font-size: 17px;
     line-height: 22px;
@@ -529,6 +531,12 @@ input[type="email"] {
     border-radius: 5px;
     transition: 0.3s;
 }
+.new_subscription{
+    padding-left: 180px;
+}
+.subscribe-form2 {
+    padding-right:180px;
+}
 
 .function-btn:hover {
     border-color: white;
@@ -567,11 +575,20 @@ p.white-block-after:after {
     margin: 0 auto 0 auto;
     margin-top: 20px;
 }
-
 h2.white-block-after:after {
     display: block;
     height: 2px;
     background-color: white;
+    content: " ";
+    width: 100px;
+    margin: 0 auto 0 auto;
+    margin-top: 20px;
+}
+
+h2.blue-block-after:after {
+    display: block;
+    height: 2px;
+    background-color: #3C5496;
     content: " ";
     width: 100px;
     margin: 0 auto 0 auto;
@@ -627,7 +644,7 @@ i {
 /* PROJECTS */
 
 section.projects {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     overflow: hidden;
 }
 
@@ -862,7 +879,7 @@ a:hover {
         margin: 0;
     }
     .project {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         padding: 15%;
     }
