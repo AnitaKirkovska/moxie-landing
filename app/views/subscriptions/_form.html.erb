@@ -7,7 +7,7 @@
 <p id="notice"><%= notice %></p>
     <%= form_for(@subscription) do |f| %>
       
-      <div class="main-input field-name" name="name" type="text" id="myinputbox">
+      <div id="myinputbox" class="main-input field-name" name="name" type="text" >
         <%= f.text_field :name, class: 'form-control', placeholder: "Вашето име..." %>
       </div>
 
@@ -15,7 +15,7 @@
         <%= f.email_field :email, class: 'form-control', placeholder: "Вашиот email..." %>
       </div>
 
-      <div class="submit-btn">
+      <div type="submit">
         <%= f.submit class: 'submit-btn',  value: "ВКЛУЧИ СЕ" %>
       </div>
     <% end %>
