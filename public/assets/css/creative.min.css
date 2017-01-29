@@ -285,6 +285,11 @@ p.lead {
 
 /*HELPER CLASS END*/
 
+#notice{
+    color:white;
+    text-align: center;
+}
+
 * {
     box-sizing: border-box;
     outline: 0;
