@@ -883,7 +883,8 @@ a:hover {
     .submit-btn {
         display: block;
         margin: 0 auto;
-        min-width: 200px;
+        min-width: 280px;
+        max-width: 900px;
     }
     form {
         padding: 0px 10px !important;

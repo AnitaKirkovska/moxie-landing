@@ -427,13 +427,14 @@ input[type="text"]:active {
     outline: none;
 }
 
-form {
+.subscribe-form {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
     padding: 0px 10px;
-    padding-left: 90px;
+    /*padding-left: 90px;*/
 }
+
 
 form input {
     padding: 10px;
@@ -842,10 +843,18 @@ a:hover {
 
 /* RESPONSIVENESS */
 
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1780px) {
     section.hero {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70)), url('/assets/img/hero.jpg') no-repeat center center / cover;
     }
+    .subscribe-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    padding-left: 90px;
+}
+    
 }
 
 @media only screen and (max-width: 1200px) {
@@ -857,6 +866,13 @@ a:hover {
         margin: 0 auto;
         padding: 15%;
     }
+    .subscribe-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    padding-left: 90px;
+}
 }
 
 @media only screen and (max-width: 1100px) {
@@ -867,7 +883,15 @@ a:hover {
         max-width: 1300px;
         margin: 0 auto;
         padding-top: 100px;
+
     }
+    .subscribe-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    padding-left: 90px;
+}
 }
 
 @media only screen and (max-width: 900px) {
@@ -888,11 +912,18 @@ a:hover {
     .submit-btn {
         display: block;
         margin: 0 auto;
-        min-width: 200px;
+        min-width: 250px;
+        max-width: 900px;
     }
     form {
         padding: 0px 10px !important;
     }
+    .subscribe-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
 }
 
 @media only screen and (max-width: 950px) {
@@ -976,6 +1007,12 @@ a:hover {
         clear: both;
         content: "";
     }
+    .subscribe-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
 }
 
 @media only screen and (max-width: 640px) {
@@ -986,6 +1023,12 @@ a:hover {
     .col-1-of-4:last-child {
         margin-bottom: 50px;
     }
+    .subscribe-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -1054,6 +1097,12 @@ a:hover {
         width: 100%;
         margin-bottom: 15px;
     }
+    .subscribe-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
 }
 
 @media only screen and (max-width: 360px) {
@@ -1069,4 +1118,10 @@ a:hover {
     .menu {
         max-width: 250px;
     }
+    .subscribe-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
 }
