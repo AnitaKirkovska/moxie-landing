@@ -1150,7 +1150,7 @@ a:hover {
 }
     
 }
-@media only screen and (max-height: : 640px) {
+@media only screen and (max-height: 640px) {
     section.hero 
     { height: auto; }
 }
