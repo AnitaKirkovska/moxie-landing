@@ -16,7 +16,7 @@ class SubscriptionsController < ApplicationController
       if @subscription.save
         format.html { redirect_to root_path, notice: 'Вашите податоци се регистрирани. Очекувајте да ве контактираме.' }
       else
-        format.html { redirect_to root_path , notice: 'Треба да ги пополните сите полиња, со име и точна email адреса.' }
+        format.html { redirect_to root_path , notice: 'Треба да ги пополните сите полиња. Од една email адреса можете да се вклучите само еднаш.' }
       end
     end
   end
