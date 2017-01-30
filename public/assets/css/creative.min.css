@@ -1148,6 +1148,9 @@ a:hover {
     margin: 0 auto;
     padding: 0px 10px;
 }
+    
+}
+@media only screen and (max-width: 640px) {
     section.hero 
     { height: auto; }
 }
