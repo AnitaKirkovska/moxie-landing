@@ -443,7 +443,7 @@ form input {
     border: none;
 }
 
-div.form {
+.div-form {
     overflow: hidden;
 }
 
@@ -502,12 +502,9 @@ input[type="email"] {
 
 .fa-arrow-circle-o-down {
     display: none;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    bottom: 20px;
     height: 25px;
     width: 25px;
+    margin: 20px auto;
 }
 
 
@@ -1124,9 +1121,7 @@ a:hover {
     .menu-trigger {
         top: 10px;
     }
-    section.hero {
-        height: calc(100vh - 55px);
-    }
+   
     h1 {
         font-size: 28px;
         line-height: 33px;
