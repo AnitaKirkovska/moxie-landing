@@ -858,7 +858,7 @@ a:hover {
 
 /* RESPONSIVENESS */
 
-@media only screen and (max-width: 1780px) {
+@media only screen and (max-width: 1776px) {
     section.hero {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70)), url('/assets/img/hero.jpg') no-repeat center center / cover;
     }
@@ -869,6 +869,10 @@ a:hover {
     padding: 0px 10px;
     padding-left: 90px;
 }
+.subscribe-form2 {
+    padding-right: 180px;
+}
+
     
 }
 
@@ -888,6 +892,10 @@ a:hover {
     padding: 0px 10px;
     padding-left: 90px;
 }
+.subscribe-form2 {
+    padding-right: 0px;
+}
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -907,6 +915,10 @@ a:hover {
     padding: 0px 10px;
     padding-left: 90px;
 }
+.subscribe-form2 {
+    padding-right: 180px;
+}
+
 }
 
 @media only screen and (max-width: 900px) {
