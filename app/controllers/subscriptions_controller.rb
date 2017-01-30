@@ -16,7 +16,7 @@ class SubscriptionsController < ApplicationController
       if @subscription.save
         format.html { redirect_to root_path, notice: 'Извршивте успешно зачленување.' }
       else
-        format.html { render :new }
+        format.html { redirect_to root_path , notice: 'Треба да ги пополните сите полиња, со име и точна email адреса.' }
       end
     end
   end

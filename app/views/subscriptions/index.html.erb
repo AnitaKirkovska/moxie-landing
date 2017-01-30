@@ -1,21 +1,6 @@
 <!DOCTYPE HTML>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="image_src" href="/assets/img/Moxie-01.png">
-    <!--<meta property="og:title" content="" />-->
-    <!--<meta property="og:url" content="" />-->
-    <!--<meta property="og:image" content="" />-->
-    <!--<meta property="og:site_name" content="" />-->
-    <!--<meta property="og:description" content="" />-->
-    <title>Moxie</title>
-    
-    <!--[if lt IE 9]>
-            <script src="scripts/html5shiv.min.js"></script>
-        <![endif]-->
-</head>
+
 
 <body>
     <section class="hero" id="home">
@@ -35,14 +20,10 @@
         </header>
         <div class="main-overlay js-main-overlay"></div>
         <div class="hero-wrapper">
-             <div class="div-form">
+             <div class="div-form ">
                  <h1 class="textCenter"><strong>ИНИЦИЈАТИВА ЗА ПРОМЕНИ <span class="block">ПРЕКУ СТУДЕНТСКА СОРАБОТКА</span></strong></h1>
                  <p class="textCenter lead">Приклучи се на <strong>200 студенти</strong>, посветени кон создавање на подобри можности во образованието</p>
-                 <form action="" class="subscribe-form">
-                     <input class="main-input field-name" name="name" placeholder="Вашето име..." type="text" id="myinputbox">
-                     <input class="main-input field-email" name="email" placeholder="Вашиот email..." type="email">
-                     <button type="submit" class="submit-btn"><strong>ВКЛУЧИ СЕ!</strong></button>
-                 </form>
+                 <%= render 'form' %>
              </div>
              <a href="#" class="info-btn scroll-to-idea">Повеќе инфо</a>
              <a class="scroll-to-idea"><img src="/assets/img/arrow.png" class="fa fa-arrow-circle-o-down"></a>
@@ -51,7 +32,7 @@
     
     <section class="blue-bg" id="idea">
         <div class="wrapper">
-            <h2>ОД СТУДЕНТИТЕ ЗА СТУДЕНТИТЕ</h2>
+            <h2 class="white-block-after">ОД СТУДЕНТИТЕ ЗА СТУДЕНТИТЕ</h2>
             <p class="margin-bottom-40">Проектот е создаден за да одговори на актуелните предизвици со образованието во Македонија. <strong>Претставува огласна табла за споделување иницијативи за соработка, помеѓу студенти од различни факултети.</strong></p>
             <a class="function-btn scroll-to-features">КАКО ФУНКЦИОНИРА?</a>
         </div>
@@ -59,7 +40,7 @@
     
     <section class="features clearfix" id="features">
         <div class="wrapper">
-           <h2 class="white-block-after">ПРАКТИЧНО ИСКУСТВО ЗА ВРЕМЕ НА СТУДИИТЕ</h2>
+           <h2 class="blue-block-after">ПРАКТИЧНО ИСКУСТВО ЗА ВРЕМЕ НА СТУДИИТЕ</h2>
             <div class="row">
                 <div class="col-1-of-4">
                     <i class="fa fa-search fa-4x" aria-hidden="true"></i>
@@ -118,13 +99,10 @@
     
     
     <section class="blue-bg clearfix" id="contact">
+
         <div class="wrapper">
-            <h2>ТВОЕТО МИСЛЕЊЕ Е НАЈВАЖНО</h2>
-            <form action="" class="subscribe-form2">
-                 <input class="field-name" name="name" placeholder="Вашето име..." type="text">
-                 <input class="field-email" name="email" placeholder="Вашиот email..." type="email">
-                 <button type="submit" class="submit-btn"><strong>ВКЛУЧИ СЕ</strong></button>
-            </form>
+            <h2 class="white-block-after">ТВОЕТО МИСЛЕЊЕ Е НАЈВАЖНО</h2>
+            <div class="subscribe-form2" style=“padding-left: 0px;"><%= render 'form' %></div>
             <p>Доколку имате предлози и прашања, контактирајте не' на мејл.</p> 
             <i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
             <p>beamoxie@gmail.com</p>                       
@@ -148,6 +126,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/assets/js/creative.js"></script>
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/assets/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/creative.min.js"></script>
 </body>
 
-</html>
+
