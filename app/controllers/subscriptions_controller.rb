@@ -14,7 +14,7 @@ class SubscriptionsController < ApplicationController
 
     respond_to do |format|
       if @subscription.save
-        format.html { redirect_to root_path, notice: 'Вашите податоци се регистрирани. Очекувајте да ве контактираме.' }
+        format.html { redirect_to root_path, notice: 'Ви благодариме што ја поддржувате оваа идеја. Очекувајте да ве контактираме кога moxie ќе отпочне со работа.' }
       else
         format.html { redirect_to root_path , notice: 'Треба да ги пополните сите полиња. Од една email адреса можете да се вклучите само еднаш.' }
       end
