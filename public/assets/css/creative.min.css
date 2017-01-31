@@ -1075,7 +1075,7 @@ a:hover {
 @media only screen and (max-width: 1366px) {
 .hero-wrapper { padding-top: 50px
  }
- 
+
 }
 @media only screen and (max-width: 767px) {
     .div-form {
@@ -1149,7 +1149,12 @@ a:hover {
 }
     
 }
-@media only screen and (max-height: 5  40px) {
+@media only screen and (max-height: 540px) {
+    section.hero 
+    { height: auto; }
+}
+
+@media only screen and (max-height: 640px) {
     section.hero 
     { height: auto; }
 }
