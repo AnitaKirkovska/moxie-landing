@@ -611,7 +611,7 @@ h2.blue-block-after:after {
 
 i {
     margin-bottom: 30px;
-    color: #F05F40;
+    color: #3C5496;
 }
 
 .features-btn {
@@ -794,14 +794,11 @@ section.projects {
 }
 
 .dark-bg .wrapper {
-    padding: 40px 10px;
+    padding: 10px 10px;
 }
 
-.dark-bg .wrapper h4 {
+.dark-bg .wrapper p {
     color: white;
-    font-size: 30px;
-    line-height: 35px;
-    margin-bottom: 30px;
 }
 
 
@@ -1076,7 +1073,9 @@ a:hover {
 }
 }
 @media only screen and (max-width: 1366px) {
-.hero-wrapper { padding-top: 50px }
+.hero-wrapper { padding-top: 50px
+ }
+ 
 }
 @media only screen and (max-width: 767px) {
     .div-form {
@@ -1150,7 +1149,7 @@ a:hover {
 }
     
 }
-@media only screen and (max-height: 540px) {
+@media only screen and (max-height: 5  40px) {
     section.hero 
     { height: auto; }
 }
@@ -1162,7 +1161,7 @@ a:hover {
     }
     .project:hover a {
         padding: 10px 20px 10px 20px;
-        height: 33px;
+        height: 33px;  
         font-size: 14px;
     }
     .menu {
